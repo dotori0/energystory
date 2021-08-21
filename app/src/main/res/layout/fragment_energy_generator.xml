@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/budget_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/budget_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="10000 M$" />
+
+                <ImageView
+                    android:id="@+id/budget_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/budget_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/budget_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/budget_value"
+                    app:srcCompat="@drawable/budget_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/energy_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/energy_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1000 Mtoe" />
+
+                <ImageView
+                    android:id="@+id/energy_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/energy_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/energy_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/energy_value"
+                    app:srcCompat="@drawable/energy_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/pollution_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pollution_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="50%" />
+
+                <ImageView
+                    android:id="@+id/pollution_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pollution_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/pollution_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pollution_value"
+                    app:srcCompat="@drawable/pollution_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/approval_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/approval_rate_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="50.0%" />
+
+                <ImageView
+                    android:id="@+id/approval_rate_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/approval_rate_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/approval_rate_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/approval_rate_value"
+                    app:srcCompat="@drawable/approval_rate_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/edge"
+        android:paddingTop="@dimen/middle_padding"
+        android:paddingBottom="@dimen/middle_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/middle_padding"
+            android:paddingRight="@dimen/middle_padding">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pv_layout"
+                style="@style/energy_layout"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/pv_image"
+                    style="@style/energy_image"
+                    app:layout_constraintBottom_toBottomOf="@+id/pv_text"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pv_text"
+                    app:srcCompat="@drawable/photovoltaics" />
+
+                <TextView
+                    android:id="@+id/pv_text"
+                    style="@style/energy_text"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/small_padding"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:text="@string/photovoltaics"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pv_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/solar_thermal_layout"
+                style="@style/energy_layout"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/solar_thermal_image"
+                    style="@style/energy_image"
+                    app:layout_constraintBottom_toBottomOf="@+id/solar_thermal_text"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/solar_thermal_text"
+                    app:srcCompat="@drawable/solar_thermal" />
+
+                <TextView
+                    android:id="@+id/solar_thermal_text"
+                    style="@style/energy_text"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/small_padding"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:text="@string/solar_thermal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/solar_thermal_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wind_power_layout"
+                style="@style/energy_layout"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                tools:background="@drawable/blue_edge"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/wind_power_image"
+                    style="@style/energy_image"
+                    app:layout_constraintBottom_toBottomOf="@+id/wind_power_text"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/wind_power_text"
+                    app:srcCompat="@drawable/wind_power" />
+
+                <TextView
+                    android:id="@+id/wind_power_text"
+                    style="@style/energy_text"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/small_padding"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:text="@string/wind_power"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/wind_power_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wind_power_card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/energy_card_view_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ligth_gray_edge">
+
+            <Button
+                android:id="@+id/wind_power_select_button"
+                style="@style/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/select"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/wind_power_card_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="120dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wind_power_real" />
+
+            <TextView
+                android:id="@+id/wind_power_card_text"
+                style="@style/energy_text"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/wind_power"
+                app:layout_constraintBottom_toTopOf="@+id/wind_power_card_description_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wind_power_card_image"
+                app:layout_constraintTop_toTopOf="@+id/wind_power_card_image" />
+
+            <TextView
+                android:id="@+id/wind_power_card_description_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="@dimen/small_padding"
+                android:text="@string/wind_power_description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/wind_power_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/wind_power_card_text" />
+
+            <TextView
+                android:id="@+id/wind_power_card_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/wind_power_cost_text"
+                android:textColor="@android:color/holo_red_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/solar_thermal_card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/energy_card_view_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ligth_gray_edge">
+
+            <Button
+                android:id="@+id/solar_thermal_select_button"
+                style="@style/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/select"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/solar_thermal_card_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="120dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/solar_thermal_real" />
+
+            <TextView
+                android:id="@+id/solar_thermal_card_text"
+                style="@style/energy_text"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/solar_thermal"
+                app:layout_constraintBottom_toTopOf="@+id/solar_thermal_card_description_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/solar_thermal_card_image"
+                app:layout_constraintTop_toTopOf="@+id/solar_thermal_card_image" />
+
+            <TextView
+                android:id="@+id/solar_thermal_card_description_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="@dimen/small_padding"
+                android:text="@string/solar_thermal_description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/solar_thermal_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/solar_thermal_card_text" />
+
+            <TextView
+                android:id="@+id/solar_thermal_card_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/solar_thermal_cost_text"
+                android:textColor="@android:color/holo_red_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pv_card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/energy_card_view_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ligth_gray_edge">
+
+            <Button
+                android:id="@+id/pv_select_button"
+                style="@style/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/select"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/pv_card_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="120dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/photovoltaics_real" />
+
+            <TextView
+                android:id="@+id/pv_card_text"
+                style="@style/energy_text"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/photovoltaics"
+                app:layout_constraintBottom_toTopOf="@+id/pv_card_description_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pv_card_image"
+                app:layout_constraintTop_toTopOf="@+id/pv_card_image" />
+
+            <TextView
+                android:id="@+id/pv_card_description_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="@dimen/small_padding"
+                android:text="@string/pv_description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pv_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/pv_card_text" />
+
+            <TextView
+                android:id="@+id/pv_card_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/pv_cost_text"
+                android:textColor="@android:color/holo_red_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/lab_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:srcCompat="@drawable/lab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

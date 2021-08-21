@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/budget_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/budget_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="10000 M$" />
+
+                <ImageView
+                    android:id="@+id/budget_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/budget_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/budget_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/budget_value"
+                    app:srcCompat="@drawable/budget_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/energy_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/energy_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1000 Mtoe" />
+
+                <ImageView
+                    android:id="@+id/energy_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/energy_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/energy_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/energy_value"
+                    app:srcCompat="@drawable/energy_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/pollution_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pollution_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="50%" />
+
+                <ImageView
+                    android:id="@+id/pollution_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pollution_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/pollution_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pollution_value"
+                    app:srcCompat="@drawable/pollution_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/approval_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/approval_rate_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="50.0%" />
+
+                <ImageView
+                    android:id="@+id/approval_rate_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/approval_rate_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/approval_rate_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/approval_rate_value"
+                    app:srcCompat="@drawable/approval_rate_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/result_text"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/big_padding"
+        android:paddingRight="@dimen/big_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_text"
+        app:layout_constraintVertical_bias="0.2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:padding="@dimen/small_padding">
+
+            <ImageView
+                android:id="@+id/budget_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/budget_label"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toStartOf="@+id/budget_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/budget_label"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/budget_icon" />
+
+            <TextView
+                android:id="@+id/budget_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/budget_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/budget_change"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="3.2"
+                app:layout_constraintStart_toEndOf="@+id/budget_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/budget_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@+id/budget_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="4"
+                app:layout_constraintStart_toEndOf="@+id/budget_label" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:padding="@dimen/small_padding">
+
+            <ImageView
+                android:id="@+id/energy_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/energy_label"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toStartOf="@+id/energy_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/energy_label"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/energy_icon" />
+
+            <TextView
+                android:id="@+id/energy_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/energy_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/energy_change"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="3.2"
+                app:layout_constraintStart_toEndOf="@+id/energy_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/energy_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@+id/energy_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="4"
+                app:layout_constraintStart_toEndOf="@+id/energy_label" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:padding="@dimen/small_padding">
+
+            <ImageView
+                android:id="@+id/pollution_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pollution_label"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toStartOf="@+id/pollution_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pollution_label"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/pollution_icon" />
+
+            <TextView
+                android:id="@+id/pollution_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pollution_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pollution_change"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="3.2"
+                app:layout_constraintStart_toEndOf="@+id/pollution_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/pollution_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@+id/pollution_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="4"
+                app:layout_constraintStart_toEndOf="@+id/pollution_label" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:padding="@dimen/small_padding">
+
+            <ImageView
+                android:id="@+id/approval_rate_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/approval_rate_label"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintEnd_toStartOf="@+id/approval_rate_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/approval_rate_label"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/approval_rate_icon" />
+
+            <TextView
+                android:id="@+id/approval_rate_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/approval_rate_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/approval_rate_change"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="3.2"
+                app:layout_constraintStart_toEndOf="@+id/approval_rate_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/approval_rate_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/story_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@+id/approval_rate_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="4"
+                app:layout_constraintStart_toEndOf="@+id/approval_rate_label" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button4"
+        style="@style/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

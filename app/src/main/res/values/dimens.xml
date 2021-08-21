@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_title">40sp</dimen>
+    <dimen name="story_text_size">20sp</dimen>
+    <dimen name="energy_text_size">25sp</dimen>
+    <dimen name="story_line_spacing">1.5</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="middle_padding">16dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="energy_card_view_radius">12dp</dimen>
+    <dimen name="big_padding">48dp</dimen>
+    <dimen name="game_result">50sp</dimen>
+</resources>

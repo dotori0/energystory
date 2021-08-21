@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 첫번째줄 -->
+
+    <!-- 두번째줄 -->
+
+    <!-- 세번째줄 -->
+
+    <!-- 네번째줄 -->
+
+    <!-- 다섯번째줄 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/budget_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/budget_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="10000 M$" />
+
+                <ImageView
+                    android:id="@+id/budget_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/budget_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/budget_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/budget_value"
+                    app:srcCompat="@drawable/budget_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/energy_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/energy_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1000 Mtoe" />
+
+                <ImageView
+                    android:id="@+id/energy_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/energy_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/energy_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/energy_value"
+                    app:srcCompat="@drawable/energy_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/pollution_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pollution_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="50%" />
+
+                <ImageView
+                    android:id="@+id/pollution_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pollution_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/pollution_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pollution_value"
+                    app:srcCompat="@drawable/pollution_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/edge"
+                android:text="TextView">
+
+                <TextView
+                    android:id="@+id/approval_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/approval_rate_info_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="50.0%" />
+
+                <ImageView
+                    android:id="@+id/approval_rate_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/approval_rate_value"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toStartOf="@+id/approval_rate_value"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/approval_rate_value"
+                    app:srcCompat="@drawable/approval_rate_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile_1"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_2"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_3"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_4"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_5"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_6"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile_7"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_8"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_9"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_10"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_11"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_12"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile_13"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_14"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_15"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_16"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_17"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_18"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile_19"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_20"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_21"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_22"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_23"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_24"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tile_25"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_26"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_27"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_28"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_29"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+
+            <ImageView
+                android:id="@+id/tile_30"
+                android:padding="@dimen/small_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/temporary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.751026" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/info_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:background="@drawable/ligth_gray_edge"
+        android:visibility="gone"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/next_button5"
+                style="@style/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/select"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/energy_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Korea" />
+
+            <TextView
+                android:id="@+id/sun_light_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="18dp"
+                tools:text="sun light: 10"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/country_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sun_power_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                tools:text="sun power: 10"
+                android:textColor="@color/black"
+                app:layout_constraintBaseline_toBaselineOf="@+id/sun_light_value"
+                app:layout_constraintStart_toEndOf="@+id/sun_light_value" />
+
+            <TextView
+                android:id="@+id/wind_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="8dp"
+                tools:text="wind: 10"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/country_name"
+                app:layout_constraintTop_toBottomOf="@+id/sun_light_value" />
+
+            <TextView
+                android:id="@+id/precipitation_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                tools:text="precipitation: 10"
+                android:textColor="@color/black"
+                app:layout_constraintBaseline_toBaselineOf="@+id/wind_value"
+                app:layout_constraintStart_toEndOf="@+id/sun_light_value" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+<!--
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/budget_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/game_title"
+        app:layout_constraintBottom_toTopOf="@+id/energy_temporary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/energy_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/game_title"
+        app:layout_constraintBottom_toTopOf="@+id/pollution_temporary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budget_temporary" />
+
+    <TextView
+        android:id="@+id/pollution_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/game_title"
+        app:layout_constraintBottom_toTopOf="@+id/approval_rate_temporary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/energy_temporary" />
+
+    <TextView
+        android:id="@+id/approval_rate_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/game_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pollution_temporary" />
+
+    <Button
+        android:id="@+id/next_button_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+-->

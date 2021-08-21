@@ -1,0 +1,50 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">EnergyStory</string>
+
+    <string name="game_title">Energy Story</string>
+    <string name="game_start">start</string>
+
+    <string name="scenario">scenario</string>
+    <string name="ep1_title">Solar Energy</string>
+    <string name="ep2_title">(Locked)</string>
+    <string name="ep3_title">(Locked)</string>
+
+    <string name="story">This is 2100.
+        All the fossils were used and there are no more resources.\n\nYou are a new minister of UN Ministry of Environment.
+        World citizens are asking you to handle the energy problem.
+        You got a permission from UN Economic and Social Council to install solar energy generators in 30 countries.\n\nFor the future of the humanity, study each energy.
+        Install energy generators properly.
+    </string>
+    <string name="next">next</string>
+
+    <string name="tutorial_temporary">Game Guide by Secretary</string>
+    <string name="secretary_name">Secretary Yoon</string>
+
+
+
+    <!-- Selecting Energy Generator -->
+    <string name="wind_power">wind power</string>
+    <string name="solar_thermal">solar thermal</string>
+    <string name="photovoltaics">photovoltaics</string>
+
+    <string name="wind_power_description">The turbine inside changes wind\'s kinetic energy into electrical energy by spinning.</string>
+    <string name="wind_power_cost_text">Cost: 30000 M$</string>
+
+    <string name="solar_thermal_description">The mirrors collect solar thermal and boil the water. The steam makes turbine spin and make energy.</string>
+    <string name="solar_thermal_cost_text">Cost: 15000 M$</string>
+
+    <string name="pv_description">Semiconducting materials change light into electricity by photovoltaic effect (light make electrons move).</string>
+    <string name="pv_cost_text">Cost: 11000 M$</string>
+
+
+    <!-- Result -->
+    <string name="select">select</string>
+    <string name="result">result</string>
+    <string name="budget_label">Budget</string>
+    <string name="energy_label">Energy</string>
+    <string name="pollution_label">Pollution</string>
+    <string name="approval_rate_label">Approval</string>
+    <string name="game_over">game over</string>
+    <string name="game_win">game win</string>
+</resources>
