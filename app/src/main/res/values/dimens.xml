@@ -10,4 +10,14 @@
     <dimen name="energy_card_view_radius">12dp</dimen>
     <dimen name="big_padding">48dp</dimen>
     <dimen name="game_result">50sp</dimen>
+
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="question_horizontal_margin">32dp</dimen>
+    <dimen name="question_vertical_margin">8dp</dimen>
+    <dimen name="answer_text_size">18sp</dimen>
+    <dimen name="question_text_size">20sp</dimen>
+    <dimen name="image_header_height">70dp</dimen>
 </resources>

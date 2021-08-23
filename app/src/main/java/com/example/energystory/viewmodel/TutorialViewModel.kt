@@ -39,11 +39,12 @@ class TutorialViewModel(application: Application): AndroidViewModel(application)
             "2. Selecting Energy Generator \n\n" +
                     "Second, you select which energy generator to install. " +
                     "There are photovoltaics, solar thermal, wind power generator. " +
-                    "You must select generater matching to the region.",
+                    "You must select generator matching to the region.",
 
             "3. Getting New Energy Generator \n\n" +
                     "At first, you can use only photovoltaics generator. " +
-                    "By studying new generator and getting corrected in the quiz you can get a new energy generator.",
+                    "In the lab, you can get a new generator by solving the quiz. " +
+                    "The lab will be opened according to your approval rate.",
 
             "4. Result Page \n\n" +
                     "Changes of the budget, energy production, pollution, and approval rate will be showed in the result page. " +

@@ -45,10 +45,11 @@
                     android:id="@+id/budget_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="36dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/budget_info_icon"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="10000 M$" />
@@ -60,7 +61,6 @@
                     android:layout_marginStart="24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/budget_value"
                     app:layout_constraintDimensionRatio="1"
-                    app:layout_constraintEnd_toStartOf="@+id/budget_value"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/budget_value"
@@ -83,10 +83,11 @@
                     android:id="@+id/energy_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="36dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/energy_info_icon"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="1000 Mtoe" />
@@ -98,7 +99,6 @@
                     android:layout_marginStart="24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/energy_value"
                     app:layout_constraintDimensionRatio="1"
-                    app:layout_constraintEnd_toStartOf="@+id/energy_value"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/energy_value"
@@ -133,7 +133,8 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/pollution_info_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="50%" />
 
@@ -144,7 +145,6 @@
                     android:layout_marginStart="24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/pollution_value"
                     app:layout_constraintDimensionRatio="1"
-                    app:layout_constraintEnd_toStartOf="@+id/pollution_value"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/pollution_value"
@@ -171,7 +171,8 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/approval_rate_info_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="50.0%" />
 
@@ -182,7 +183,6 @@
                     android:layout_marginStart="24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/approval_rate_value"
                     app:layout_constraintDimensionRatio="1"
-                    app:layout_constraintEnd_toStartOf="@+id/approval_rate_value"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/approval_rate_value"
@@ -203,7 +203,9 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -218,63 +220,81 @@
 
             <ImageView
                 android:id="@+id/tile_1"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_1" />
 
             <ImageView
                 android:id="@+id/tile_2"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_2" />
 
             <ImageView
                 android:id="@+id/tile_3"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_3" />
 
             <ImageView
                 android:id="@+id/tile_4"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_4" />
 
             <ImageView
                 android:id="@+id/tile_5"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_5" />
 
             <ImageView
                 android:id="@+id/tile_6"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_6" />
         </LinearLayout>
 
         <LinearLayout
@@ -285,63 +305,78 @@
 
             <ImageView
                 android:id="@+id/tile_7"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_7" />
 
             <ImageView
                 android:id="@+id/tile_8"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_8" />
 
             <ImageView
                 android:id="@+id/tile_9"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_9" />
 
             <ImageView
                 android:id="@+id/tile_10"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_10" />
 
             <ImageView
                 android:id="@+id/tile_11"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_11" />
 
             <ImageView
                 android:id="@+id/tile_12"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_12" />
         </LinearLayout>
 
         <LinearLayout
@@ -352,63 +387,75 @@
 
             <ImageView
                 android:id="@+id/tile_13"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_13" />
 
             <ImageView
                 android:id="@+id/tile_14"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_14" />
 
             <ImageView
                 android:id="@+id/tile_15"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_15" />
 
             <ImageView
                 android:id="@+id/tile_16"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_16" />
 
             <ImageView
                 android:id="@+id/tile_17"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_17" />
 
             <ImageView
                 android:id="@+id/tile_18"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_18" />
         </LinearLayout>
 
         <LinearLayout
@@ -419,63 +466,75 @@
 
             <ImageView
                 android:id="@+id/tile_19"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_19" />
 
             <ImageView
                 android:id="@+id/tile_20"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_20" />
 
             <ImageView
                 android:id="@+id/tile_21"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_21" />
 
             <ImageView
                 android:id="@+id/tile_22"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_22" />
 
             <ImageView
                 android:id="@+id/tile_23"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_23" />
 
             <ImageView
                 android:id="@+id/tile_24"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_24" />
         </LinearLayout>
 
         <LinearLayout
@@ -486,63 +545,75 @@
 
             <ImageView
                 android:id="@+id/tile_25"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_25" />
 
             <ImageView
                 android:id="@+id/tile_26"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_26" />
 
             <ImageView
                 android:id="@+id/tile_27"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_27" />
 
             <ImageView
                 android:id="@+id/tile_28"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_1" />
 
             <ImageView
                 android:id="@+id/tile_29"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_29" />
 
             <ImageView
                 android:id="@+id/tile_30"
-                android:padding="@dimen/small_padding"
-                android:focusable="true"
-                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/temporary" />
+                android:background="@drawable/edge"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@drawable/tile_30" />
         </LinearLayout>
 
     </LinearLayout>
@@ -561,7 +632,6 @@
         android:layout_marginLeft="@dimen/layout_margin"
         android:layout_marginRight="@dimen/layout_margin"
         android:layout_marginBottom="@dimen/layout_margin"
-        android:background="@drawable/ligth_gray_edge"
         android:visibility="gone"
         app:cardCornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -572,144 +642,103 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/ligth_gray_edge">
 
             <Button
                 android:id="@+id/next_button5"
                 style="@style/next_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/select"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline9" />
 
             <TextView
                 android:id="@+id/country_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/energy_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Korea" />
+                tools:text="Colombia" />
 
             <TextView
                 android:id="@+id/sun_light_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="56dp"
                 android:layout_marginTop="18dp"
-                tools:text="sun light: 10"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toEndOf="@+id/country_name"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toEndOf="@+id/guideline8"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="sun light: 10" />
 
             <TextView
                 android:id="@+id/sun_power_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                tools:text="sun power: 10"
                 android:textColor="@color/black"
                 app:layout_constraintBaseline_toBaselineOf="@+id/sun_light_value"
-                app:layout_constraintStart_toEndOf="@+id/sun_light_value" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline9"
+                tools:text="sun power: 10" />
 
             <TextView
                 android:id="@+id/wind_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="56dp"
                 android:layout_marginTop="8dp"
-                tools:text="wind: 10"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toEndOf="@+id/country_name"
-                app:layout_constraintTop_toBottomOf="@+id/sun_light_value" />
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toEndOf="@+id/guideline8"
+                app:layout_constraintTop_toBottomOf="@+id/sun_light_value"
+                tools:text="wind: 10" />
 
             <TextView
                 android:id="@+id/precipitation_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                tools:text="precipitation: 10"
                 android:textColor="@color/black"
                 app:layout_constraintBaseline_toBaselineOf="@+id/wind_value"
-                app:layout_constraintStart_toEndOf="@+id/sun_light_value" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline9"
+                tools:text="precipitation: 10" />
+
+            <ImageView
+                android:id="@+id/flag_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounding"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country_name"
+                tools:srcCompat="@drawable/tile_3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-<!--
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/budget_temporary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="@dimen/game_title"
-        app:layout_constraintBottom_toTopOf="@+id/energy_temporary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/energy_temporary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="@dimen/game_title"
-        app:layout_constraintBottom_toTopOf="@+id/pollution_temporary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/budget_temporary" />
-
-    <TextView
-        android:id="@+id/pollution_temporary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="@dimen/game_title"
-        app:layout_constraintBottom_toTopOf="@+id/approval_rate_temporary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/energy_temporary" />
-
-    <TextView
-        android:id="@+id/approval_rate_temporary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="@dimen/game_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pollution_temporary" />
-
-    <Button
-        android:id="@+id/next_button_temporary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
--->

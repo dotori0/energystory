@@ -348,8 +348,8 @@
 
             <ImageView
                 android:id="@+id/wind_power_card_image"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="82dp"
+                android:layout_height="89dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="120dp"
@@ -590,15 +590,15 @@
 
     <ImageButton
         android:id="@+id/lab_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="300dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintDimensionRatio="1"
         app:layout_constraintEnd_toEndOf="@+id/scrollView2"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:srcCompat="@drawable/lab" />
+        app:srcCompat="@drawable/lab"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

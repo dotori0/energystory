@@ -11,7 +11,8 @@
     <string name="ep3_title">(Locked)</string>
 
     <string name="story">This is 2100.
-        All the fossils were used and there are no more resources.\n\nYou are a new minister of UN Ministry of Environment.
+        All the fossil fuels were used and there are no more resources. Because of excessive usage of fossil fuel, every country\'s climate have changed.
+        \n\nYou are a new minister of UN Ministry of Environment.
         World citizens are asking you to handle the energy problem.
         You got a permission from UN Economic and Social Council to install solar energy generators in 30 countries.\n\nFor the future of the humanity, study each energy.
         Install energy generators properly.
@@ -47,4 +48,8 @@
     <string name="approval_rate_label">Approval</string>
     <string name="game_over">game over</string>
     <string name="game_win">game win</string>
+
+
+    <!-- Quiz -->
+    <string name="doctor_name">Doctor Park</string>
 </resources>

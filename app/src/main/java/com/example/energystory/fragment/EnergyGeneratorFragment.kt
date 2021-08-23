@@ -7,7 +7,10 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.LENGTH_LONG
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
@@ -111,12 +114,24 @@ class EnergyGeneratorFragment : Fragment() {
         val pollutionValue: TextView = view.findViewById(R.id.pollution_value)
         val approvalRateValue: TextView = view.findViewById(R.id.approval_rate_value)
 
+        val labButton: ImageButton = view.findViewById(R.id.lab_button)
+
         viewModel.getStatus().observe(viewLifecycleOwner, Observer {
             budgetValue.text = it.budget.toString() + " M$"
             energyValue.text = it.energy.toString() + " Mtoe"
             pollutionValue.text = it.pollution.toString() + "%"
             approvalRateValue.text = (it.approvalRate.toFloat() / 10).toString() + "%"
+
+            if (it.generatorNumber == 1 && it.approvalRate >= 112 || it.generatorNumber == 2 && it.approvalRate >= 132) {
+                labButton.visibility = VISIBLE
+            } else {
+                labButton.visibility = GONE
+            }
         })
+
+        labButton.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_energyGeneratorFragment_to_quizStoryFragment)
+        }
 
         return view
     }

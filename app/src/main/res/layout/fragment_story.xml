@@ -17,7 +17,7 @@
         android:lineSpacingMultiplier="@dimen/story_line_spacing"
         android:text="@string/story"
         android:textColor="@color/black"
-        android:textSize="@dimen/story_text_size"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

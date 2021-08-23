@@ -14,36 +14,36 @@ import com.example.energystory.data.tile.TileRepository
 class GameViewModel(application: Application): AndroidViewModel(application) {
     // data
     val countries: Array<Country> = arrayOf(
-            Country("1",72,43,38,43),
-            Country("2",99,94,12,49),
-            Country("3",73,90,48,31),
-            Country("4",70,39,10,21),
-            Country("5",67,83,37,37),
-            Country("6",35,86,74,45),
-            Country("7",33,44,86,61),
-            Country("8",89,93,25,24),
-            Country("9",66,29,39,40),
-            Country("10",86,80,10,31),
-            Country("11",62,90,31,29),
-            Country("12",96,33,9,26),
-            Country("13",73,86,45,43),
-            Country("14",86,59,69,88),
-            Country("15",86,76,59,76),
-            Country("16",57,30,29,43),
-            Country("17",75,28,13,29),
-            Country("18",60,30,28,33),
-            Country("19",38,61,17,10),
-            Country("20",53,41,34,31),
-            Country("21",33,39,96,56),
-            Country("22",25,65,54,47),
-            Country("23",45,29,30,53),
-            Country("24",55,59,25,30),
-            Country("25",69,26,16,34),
-            Country("26",20,55,49,5),
-            Country("27",54,61,41,21),
-            Country("28",62,55,36,48),
-            Country("29",95,48,87,78),
-            Country("30",30,30,20,36)
+            Country("Moldova", 72, 43, 43, 38),
+            Country("Russia", 99, 94, 49, 12),
+            Country("Columbia", 73, 90, 31, 48),
+            Country("Korea", 70, 39, 21, 10),
+            Country("RSA", 67, 83, 37, 37),
+            Country("Italy", 35, 86, 45, 44),
+            Country("Singapore", 33, 44, 61, 86),
+            Country("Germany", 89, 93, 24, 25),
+            Country("Denmark", 66, 29, 40, 39),
+            Country("Cambodia", 86, 80, 31, 10),
+            Country("Morocco", 62, 90, 29, 31),
+            Country("France", 96, 33, 26, 9),
+            Country("Spain", 73, 86, 43, 45),
+            Country("Brazil", 86, 59, 88, 69),
+            Country("Canada", 86, 76, 76, 59),
+            Country("Egypt", 57, 30, 43, 29),
+            Country("USA", 75, 28, 29, 13),
+            Country("Argentina", 60, 30, 33, 28),
+            Country("Tanzania", 38, 61, 10, 17),
+            Country("Chile", 53, 41, 31, 34),
+            Country("Rwanda", 33, 39, 56, 96),
+            Country("England", 25, 65, 47, 54),
+            Country("butane", 45, 29, 53, 30),
+            Country("Japan", 55, 59, 30, 25),
+            Country("Philippine", 69, 26, 34, 16),
+            Country("Swiss", 20, 55, 5, 49),
+            Country("Malaysia", 54, 61, 21, 41),
+            Country("Bangladesh", 62, 55, 48, 36),
+            Country("Uzbekistan", 95, 48, 78, 87),
+            Country("India", 30, 58, 56, 20)
     )
 
     // Database Repository
@@ -69,6 +69,10 @@ class GameViewModel(application: Application): AndroidViewModel(application) {
 
     fun getStatusSync(): Status {
         return statusRepository.findSync(1)
+    }
+
+    fun changeStatus(status: Status) {
+        statusRepository.update(status)
     }
 
     fun getTile(position: Int): Tile? {
@@ -98,7 +102,7 @@ class GameViewModel(application: Application): AndroidViewModel(application) {
         var energyChange = when(energyGeneratorType) {
             1 -> if (sunLight < 50 || precipitation > 50) 70 else 210
             2 -> if (sunPower < 50 || precipitation > 50) 150 else 450
-            3 -> if (wind < 50) 200 else 600
+            3 -> if (wind < 50) 300 else 900
             else -> 0
         }
 

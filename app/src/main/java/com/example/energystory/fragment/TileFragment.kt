@@ -41,6 +41,7 @@ class TileFragment: Fragment() {
         val energyValue: TextView = view.findViewById(R.id.energy_value)
         val pollutionValue: TextView = view.findViewById(R.id.pollution_value)
         val approvalRateValue: TextView = view.findViewById(R.id.approval_rate_value)
+        val flagImage: ImageView = view.findViewById(R.id.flag_image)
 
         viewModel.getStatus().observe(viewLifecycleOwner, Observer {
             budgetValue.text = it.budget.toString() + " M$"
@@ -119,6 +120,9 @@ class TileFragment: Fragment() {
                     sunPowerValue.text = "sun power: " + country.sunPower.toString()
                     precipitationValue.text = "precipitation: " + country.precipitation.toString()
                     windValue.text = "wind: " + country.wind.toString()
+
+                    flagImage.setImageDrawable(tiles[i - 1].drawable)
+                    flagImage.clipToOutline = true
                 }
             }
             else {
