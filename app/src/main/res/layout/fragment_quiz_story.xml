@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/tutorial_temporary" />
+        tools:text="Quiz Guid by Doctor" />
 
     <ImageView
         android:id="@+id/doctor_image"
